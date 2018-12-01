@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
+    <script src="LivingCreature.js"></script>
+    <script src="Grass.js"></script>
+    <script src="Xotaker.js"></script>
+    <script src="Gishatich.js"></script>
+    <script src="Supermard.js"></script>
+    <script src="Dinozavr.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <html>
+
+    <head>
+        <style>
+            #legend {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 800px;
+                background-image: linear-gradient(white, orange, red);
+            }
+
+            .legend-color {
+                width: 30px;
+                height: 30px;
+            }
+
+            td {
+                border: 1px solid black;
+                font-size: 14px;
+                padding-left: 5px;
+
+            }
+
+            body {
+                background-image: linear-gradient(white, lightgreen, blue);
+                padding: 150px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <table id="legend">
+            <tr>
+                <td class="legend-color">Գույն</td>
+                <td>Անվանում</td>
+                <td>Շարժվում է</td>
+                <td>Ուտում է</td>
+                <td>Բազմանում է</td>
+                <td>Սատկում է</td>
+            </tr>
+
+            <tr>
+                <td class="legend-color" style="background-color:gray"></td>
+                <td>Դատարկ վանդակներ</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="legend-color" style="background-color:green"></td>
+                <td>Խոտ</td>
+                <td></td>
+                <td></td>
+                <td>Մոտակա 8 վանդակներում, 4 տակտը մեկ</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="legend-color" style="background-color:yellow"></td>
+                <td>Խոտակեր</td>
+                <td>Մոտակա 8 վանդակներում, էներգիան քչանում է 1֊ով</td>
+                <td>Խոտերին, մոտակա 8 վանդակներում, շարժվելիս էներգիան ավելանում է 1֊ով</td>
+                <td>Բազմանում է մոտակա տարածքներում, երբ էներգիան 7֊ից ավել է</td>
+                <td>Սատկում է, երբ էներգիան = է 0֊ից</td>
+            </tr>
+            <tr>
+                <td class="legend-color" style="background-color:red"></td>
+                <td>Գիշատիչ</td>
+                <td>Մոտակա 8 վանդակներում, էներգիան քչանում է 2֊ով</td>
+                <td>Խոտակերներին, մոտակա 8 վանդակներում, շարժվելիս էներգիան ավելանում է 2֊ով</td>
+                <td>Բազմանում է մոտակա տարածքներում, երբ էներգիան 7֊ից ավել է</td>
+                <td>Սատկում է, երբ էներգիան = է 0֊ից</td>
+            </tr>
+            <tr>
+                <td class="legend-color" style="background-color:NavajoWhite"></td>
+                <td>Սուպեռմարդ</td>
+                <td>Մոտակա 8 վանդակներում, էներգիան քչանում է 2֊ով</td>
+                <td>Խոտակերներին, մոտակա 8 վանդակներում, շարժվելիս էներգիան ավելանում է 2֊ով</td>
+                <td>Բազմանում է մոտակա տարածքներում, երբ էներգիան 12֊ից ավել է</td>
+                <td>Սատկում է, երբ էներգիան փոքր է 0֊ից</td>
+            </tr>
+            <tr>
+                <td class="legend-color" style="background-color:black"></td>
+                <td>Դինոզավռ</td>
+                <td>Մոտակա 8 վանդակներում, էներգիան քչանում է 2֊ով</td>
+                <td>Խոտակերներին, մոտակա 8 վանդակներում, շարժվելիս էներգիան ավելանում է 2֊ով</td>
+                <td>Բազմանում է մոտակա տարածքներում, երբ էներգիան 12֊ից ավել է</td>
+                <td>Սատկում է, երբ էներգիան փոքր է 0֊ից</td>
+            </tr>
+        </table>
+    </body>
+
+    </html>
+</body>
+
+</html>
